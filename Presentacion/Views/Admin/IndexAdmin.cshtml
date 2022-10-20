@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Entidades.Tauto>
+
+@{
+    ViewData["Title"] = "IndexAdmin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Administrador</h1>
+
+<p>
+    <a asp-action="Formulario" class="btn btn-primary">Registrar Auto</a>
+</p>
+<table class="table table-light table-hover my-shadow">
+    <thead @*class="table-secondary"*@>
+        <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="my-transition">
+                @*<td class="text-center" width="360px">*@
+                <td>
+                    @if (item.Foto != null)
+                    {
+                        <img src="@item.Foto.Remove(0,23)" class="rounded ajustar" alt="Image" width="180px" height="140px" />
+                    }
+                </td>
+                <td class="align-content-center p-info">
+                    <br><br>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td class="align-content-center p-info">
+                    <br><br>
+                    @Html.DisplayFor(modelItem => item.Modelo)
+                </td>
+                <td class="align-content-center p-costo">
+                    <br><br>
+                    $@Html.DisplayFor(modelItem => item.Costo)
+                </td>
+                @*            <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>*@
+            <td>
+                <br><br>
+                <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-warning">Editar</a> 
+                <a asp-action="Detalles" asp-route-id="@item.Id" class="btn btn-secondary">Detalles</a> 
+                    <a asp-action="Borrar" asp-route-id="@item.Id" class="btn btn-danger">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

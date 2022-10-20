@@ -1,0 +1,17 @@
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\bin\Debug\net6.0\Datos.deps.json
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\bin\Debug\net6.0\Datos.runtimeconfig.json
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\bin\Debug\net6.0\Datos.dll
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\bin\Debug\net6.0\Datos.pdb
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.csproj.AssemblyReference.cache
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.AssemblyInfo.cs
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.csproj.CopyComplete
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.dll
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\refint\Datos.dll
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.pdb
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\Datos.genruntimeconfig.cache
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\obj\Debug\net6.0\ref\Datos.dll
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\bin\Debug\net6.0\Entidades.dll
+C:\Users\Jarol\source\repos\PruebaDealer\Datos\bin\Debug\net6.0\Entidades.pdb

@@ -1,0 +1,64 @@
+﻿@model Entidades.Tauto
+
+@{
+    ViewData["Title"] = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@Model.Marca</h2>
+
+<div>
+    <h3>@Model.Modelo</h3>
+    <br />
+
+    <dl class="row">
+        <dd class="col-sm-12">
+            <img src="@Model.Foto.Remove(0,23)" alt="Foto" width="600px" />
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <hr />
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+        <hr />
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <hr />
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Transmicion)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Transmicion)
+        </dd>
+        <hr />
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+        <hr />
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="IndexAdmin" class="btn btn-warning">Volver al listado</a>
+</div>

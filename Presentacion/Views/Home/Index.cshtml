@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Entidades.Tauto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-action="Filtrar">
+    <input type="text" placeholder="Filtrar" name="marca" />
+    <input type="submit" name="Filtrar" class="btn btn-dark"/>
+</form>
+
+<table class="table table-light table-hover my-shadow">
+    <thead @*class="table-secondary"*@>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr class="my-transition">
+                <td>
+                @if (item.Foto != null)
+                {
+                    <img src="@item.Foto.Remove(0,23)" class="rounded ajustar" alt="Image" width="180px" height="140px"/>
+                }
+            </td>
+                <td class="align-content-center p-info">
+                <br><br>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td class="align-content-center p-info">
+                <br><br>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td class="align-content-center p-costo">
+                <br><br>
+                    $@Html.DisplayFor(modelItem => item.Costo)
+            </td>
+            <td>
+                <br><br>
+                <a asp-action="VerAuto" class="btn btn-primary text-center" asp-route-id="@item.Id">Ver detalles</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+         
