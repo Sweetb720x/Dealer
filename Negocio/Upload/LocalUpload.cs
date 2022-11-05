@@ -10,11 +10,6 @@ namespace Negocio.Upload
 {
     public class LocalUpload : IFileUpload
     {
-        //private readonly IHostingEnvironment env;
-        //public LocalUpload(IHostingEnvironment env)
-        //{
-        //    this.env = env;
-        //}
         public string UploadImageAsync(IFormFile Foto)
         {
             //var path = Path.Combine(@"../Presentacion/wwwroot/Images", Foto.FileName);

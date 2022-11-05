@@ -15,14 +15,21 @@ namespace Datos
             contexto.Tautos.Add(auto);
             contexto.SaveChanges();
         }
-        public List<Tauto> Listar()
+        public List<Tauto> Listar(string marca)
         {
-            return contexto.Tautos.ToList();
+            if (marca == null)
+            {
+                return contexto.Tautos.ToList();
+            }
+            else
+            {
+                return contexto.Tautos.Where(x => x.Marca == marca || x.Modelo == marca).ToList();
+            }
         }
-        public List<Tauto> Filtrar(string marca)
-        {
-            return contexto.Tautos.Where(x=>x.Marca == marca || x.Modelo == marca).ToList();
-        }
+        //public List<Tauto> Filtrar(string marca)
+        //{
+        //    return contexto.Tautos.Where(x=>x.Marca == marca || x.Modelo == marca).ToList();
+        //}
         public Tauto Buscar(int id)
         {
             return contexto.Tautos.FirstOrDefault(x=>x.Id==id);

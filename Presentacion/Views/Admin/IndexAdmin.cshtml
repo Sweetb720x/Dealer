@@ -10,6 +10,12 @@
 <p>
     <a asp-action="Formulario" class="btn btn-primary">Registrar Auto</a>
 </p>
+
+<form asp-action="IndexAdmin">
+    <input type="text" placeholder="Filtrar" name="marca" />
+    <input type="submit" name="Filtrar" class="btn btn-dark" />
+</form>
+
 <table class="table table-light table-hover my-shadow">
     <thead @*class="table-secondary"*@>
         <tr>

@@ -19,11 +19,10 @@ namespace Presentacion.Controllers
         PropietarioNegocio propietarios = new PropietarioNegocio();
         AutoNegocio autos = new AutoNegocio();
         AdminNegocio admin = new AdminNegocio();
-
-
-        public ActionResult Index()
+      
+        public ActionResult Index(string marca)
         {
-            var model = autos.Listar();
+            var model = autos.Listar(marca);
             return View(model);
         }
         public ActionResult Login()
@@ -64,12 +63,12 @@ namespace Presentacion.Controllers
             var model = autos.Buscar(id);
             return View(model);
         }
-        [HttpPost]
-        public ActionResult Filtrar(string marca)
-        {
-            var model = autos.Filtrar(marca);
-            return View(model);
-        }
+        //[HttpPost]
+        //public ActionResult Filtrar(string marca)
+        //{
+        //    var model = autos.Filtrar(marca);
+        //    return View(model);
+        //}
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

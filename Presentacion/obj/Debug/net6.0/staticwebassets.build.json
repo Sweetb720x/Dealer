@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nfzmOOVQMBTJUlMCWRuTtB7cukPp1thc6cNaQ7ADaSU=",
+  "Hash": "zGzOmSfaTcbE0k+LMSRHW9DCH8gKfQpEpx30WoQicIo=",
   "Source": "Presentacion",
   "BasePath": "_content/Presentacion",
   "Mode": "Default",
@@ -185,6 +185,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\chevrolet.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Jarol\\source\\repos\\PruebaDealer\\Presentacion\\wwwroot\\Images\\Ford mustang.jpg",
+      "SourceId": "Presentacion",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jarol\\source\\repos\\PruebaDealer\\Presentacion\\wwwroot\\",
+      "BasePath": "_content/Presentacion",
+      "RelativePath": "Images/Ford mustang.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Ford mustang.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Jarol\\source\\repos\\PruebaDealer\\Presentacion\\wwwroot\\Images\\honda civic.png",
+      "SourceId": "Presentacion",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jarol\\source\\repos\\PruebaDealer\\Presentacion\\wwwroot\\",
+      "BasePath": "_content/Presentacion",
+      "RelativePath": "Images/honda civic.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\honda civic.png"
     },
     {
       "Identity": "C:\\Users\\Jarol\\source\\repos\\PruebaDealer\\Presentacion\\wwwroot\\Images\\logo-image.jpg",

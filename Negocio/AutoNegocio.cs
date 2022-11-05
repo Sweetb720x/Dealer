@@ -15,14 +15,14 @@ namespace Negocio
         {
             datos.InsertarAuto(auto);
         }
-        public List<Tauto> Listar()
+        public List<Tauto> Listar(string marca)
         {
-            return datos.Listar();
+            return datos.Listar(marca);
         }
-        public List<Tauto> Filtrar(string marca)
-        {
-            return datos.Filtrar(marca);
-        }
+        //public List<Tauto> Filtrar(string marca)
+        //{
+        //    return datos.Filtrar(marca);
+        //}
         public Tauto Buscar(int id)
         {
             return datos.Buscar(id);

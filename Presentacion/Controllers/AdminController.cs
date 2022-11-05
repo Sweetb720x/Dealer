@@ -25,9 +25,10 @@ namespace Presentacion.Controllers
             this.fotoUpload = fotoUpload;
         }
         AutoNegocio auto = new AutoNegocio();
-        public ActionResult IndexAdmin()
+
+        public ActionResult IndexAdmin(string marca)
         {
-            var model = auto.Listar();
+            var model = auto.Listar(marca);
             return View(model);
         }
         public ActionResult Formulario()
@@ -85,10 +86,10 @@ namespace Presentacion.Controllers
                 ruta.ToString();
             }
         }
-        public ActionResult FiltrarAdmin(string marca)
-        {
-            var model = auto.Filtrar(marca);
-            return View(model);
-        }
+        //public ActionResult FiltrarAdmin(string marca)
+        //{
+        //    var model = auto.Filtrar(marca);
+        //    return View(model);
+        //}
     }
 }

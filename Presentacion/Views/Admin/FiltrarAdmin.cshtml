@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<form asp-action="Filtrar">
+<form asp-action="FiltrarAdmin">
     <input type="text" placeholder="Filtrar" name="marca" />
     <input type="submit" name="Filtrar" class="btn btn-dark" />
 </form>
@@ -43,10 +43,12 @@
                     $@Html.DisplayFor(modelItem => item.Costo)
                 </td>
                 <td>
-                    <br><br>
-                    <a asp-action="VerAuto" class="btn btn-primary text-center" asp-route-id="@item.Id">Ver detalles</a>
-                </td>
-            </tr>
+                <br><br>
+                <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-warning">Editar</a> 
+                <a asp-action="Detalles" asp-route-id="@item.Id" class="btn btn-secondary">Detalles</a> 
+                 <a asp-action="Borrar" asp-route-id="@item.Id" class="btn btn-danger">Borrar</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
